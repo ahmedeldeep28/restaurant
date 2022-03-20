@@ -1,0 +1,25 @@
+@import "../helpers/variables";
+.controll {
+    margin-top: 10px;
+}
+.label {
+    font-family: $fontText;
+    font-size: 18px;
+    font-weight: bold;
+    color: $mainColor;
+}
+.input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    outline: none;
+    font-family: $fontText;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+textarea {
+    resize: none;
+    height: 200px;
+}

@@ -1,0 +1,61 @@
+@import "../helpers/variables";
+@import "../helpers/mixin";
+
+.card-team {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+}
+.card-team .header {
+    height: 430px;
+}
+.card-team  img {
+    transition: all .5s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+}
+.card-team .footer {
+    padding: 15px 10px;
+    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    transition: all .4s ease-in-out;
+    background: $whiteColor;
+    
+}
+.card-team:hover .footer {
+    bottom: 0px;
+}
+.card-team:hover .footer .desc {
+    height: 100px;
+    visibility: visible;
+    border-left: 3px solid $mainColor;
+    padding-left: 8px;
+}
+.card-team:hover img {
+    transform: translateY(-25px);
+}
+.card-team .footer .name {
+    font-family: $fontText;
+    text-transform: capitalize;
+    margin: 0px;
+}
+.card-team .footer .jobe {
+    font-family: $fontText;
+    color: $blackColor;
+    text-transform: capitalize;
+    margin: 7px 0px;
+}
+.card-team .footer .desc {
+    font-family: $fontText;
+    color: $blackColor;
+    font-size: 14px;
+    margin: 7px 0px;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0px;
+    transition: all .4s linear;
+}
+ 

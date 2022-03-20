@@ -1,0 +1,31 @@
+@import "../helpers/variables";
+@import "../helpers/mixin";
+
+
+.card-testimonial {
+    border-radius: 0px 25px 0px 25px;
+    background-color: $mainColor;
+    padding: 10px 15px;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+.card-testimonial  .icon {
+    font-size: 50px;
+    color: $whiteColor;
+}
+.card-testimonial  .quote {
+    font-family: $fontText;
+    font-size: 17px;
+    color: $whiteColor;
+}
+.card-testimonial .footer img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.card-testimonial .footer .name {
+    font-family: $fontText;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: $whiteColor;
+}

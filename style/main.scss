@@ -1,0 +1,215 @@
+@import "./sass/helpers/variables";
+@import "./sass/helpers/mixin";
+@import "./sass/component/input";
+@import "./sass/component/button";
+@import "./sass/component/card-offer";
+@import "./sass/component/card-menu";
+@import "./sass/component/card-team";
+@import "./sass/component/card-testimonial";
+@import "./sass/component/header";
+@import "./sass/layout/navBar";
+@import "./sass/layout/footer";
+* {
+  outline: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+.box-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section {
+  padding: 50px 0px;
+  margin-top: 15px;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+.sub-title {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  right: 0;
+  font-weight: normal;
+  font-size: 100px;
+  display: block;
+  margin-bottom: 0;
+  color: rgba(0, 0, 0, 0.2);
+  color: #c8a97e;
+  line-height: 1;
+  font-family: "Great Vibes", cursive;
+  margin-top: 0;
+  z-index: -1;
+}
+section .section-title {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.2;
+  font-family: $fontText;
+  text-transform: capitalize;
+}
+
+.services {
+  .card {
+    padding: 16px 0px;
+    margin-top: 6px;
+    transition: all 0.4s ease;
+    border-radius: 6px;
+    &:hover {
+      box-shadow: 0 4px 12px 0 rgba(12, 0, 4, 0.1);
+      transform: translateY(-4px);
+    }
+  }
+  .top {
+    background: #000;
+    color: $mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    span {
+      font-size: 55px;
+    }
+  }
+  .title {
+    font-size: 32px;
+    margin: 5px;
+    color: $mainColor;
+    font-family: $fontHeader;
+    font-weight: 600;
+  }
+  .text {
+    font-size: 15px;
+    margin: 5px;
+    font-weight: 600;
+    color: #666;
+    font-family: $fontText;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+  }
+}
+
+.content {
+  .content__title {
+    font-size: 36px;
+    color: $mainColor;
+    font-family: $fontText;
+    @media (max-width: 420px) {
+      font-size: 20px;
+    }
+  }
+  .content__desc {
+    font-size: 17px;
+    font-family: $fontText;
+    font-weight: 500;
+    color: #222;
+    @media (max-width: 420px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.list {
+  list-style: none;
+  .list__item {
+    .list__icon {
+      width: 30px;
+      height: 30px;
+      font-size: 24px;
+      color: $mainColor;
+    }
+    .list__text {
+      padding: 5px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #333;
+      font-family: $fontText;
+    }
+  }
+}
+
+.info {
+  padding: 50px 0;
+  .info__title {
+    font-size: 50px;
+    font-family: $fontHeader;
+    @media (max-width: 420px) {
+      font-size: 28px;
+    }
+  }
+  .info__desc {
+    font-size: 17px;
+    font-family: $fontText;
+    font-weight: 500;
+    @media (max-width: 420px) {
+      font-size: 15px;
+    }
+  }
+}
+.counter .card {
+  transition: all 0.4s ease;
+  border-radius: 6px;
+  padding: 16px;
+  &:hover {
+    box-shadow: 0 4px 12px 0 rgba(12, 0, 4, 0.1);
+    transform: translateY(-4px);
+  }
+}
+.counter .icon {
+  font-size: 66px;
+  color: $mainColor;
+}
+.counter .number {
+  font-size: 3em;
+  line-height: 1;
+  font-family: $fontHeader;
+  margin: 5px;
+}
+.counter .text {
+  font-size: 45px;
+  line-height: 1;
+  font-family: $fontHeader;
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+.offer-info {
+  overflow: hidden;
+  min-height: 400px;
+}
+.info-team {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  .header {
+    h3 {
+      font-size: 39px;
+      font-family: $fontHeader;
+      @media (max-width: 420px) {
+        font-size: 26px;
+      }
+    }
+  }
+  .content {
+    p {
+      font-size: 16px;
+      font-family: $fontText;
+      @media (max-width: 420px) {
+        font-size: 15px;
+      }
+    }
+  }
+}

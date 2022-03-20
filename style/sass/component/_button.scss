@@ -1,0 +1,36 @@
+@import "../helpers/variables";
+
+.button-primary {
+    padding: 6px 10px;
+    font-size: 18px;;
+    background: $mainColor;
+    outline: none;
+    color: $whiteColor;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid $mainColor;
+    transition: all .4s linear;
+    font-family: $fontText;
+}
+.button-primary:hover {
+    background-color: transparent;
+    color: $mainColor;
+    border-color: $mainColor;
+}
+.button-out-primary {
+    padding: 6px 10px;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    color: $mainColor;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid $mainColor;
+    transition: all .4s linear;
+    font-family: $fontText;
+}
+.button-out-primary:hover {
+    background: $mainColor;
+    color: $whiteColor;
+    border-color: $mainColor;
+}

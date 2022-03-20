@@ -1,0 +1,98 @@
+@import "../helpers/variables";
+@import "../helpers/mixin";
+
+.card-offer{
+    border: 1px solid $mainColor;
+    position: relative;
+    border-radius: 5px;
+    padding: 15px 10px;
+    // box-shadow: 0 0 8px  #b6aca2d0;
+    overflow: hidden;
+    .price{
+      width: 110px !important;
+      height: 110px !important;
+      position: absolute;
+      top: -200px;
+      left: -200px;
+      border-radius: 50%;
+      padding: 15px;
+      color: $whiteColor;
+      font-size: 27px;
+      background: $mainColor;
+      display: flex;
+      justify-content: center;
+      line-height: 110px;
+      transition: all .5s linear;
+      top: -20px;
+      left: -20px;
+    }
+    &:hover .price{
+      top: -20px;
+      left: -20px;
+    }
+    .offer-name{
+      font-size: 32px;
+      font-family: $fontHeader;
+      color: $mainColor;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      &::after{
+        position: absolute;
+        content: "";
+        width: 50%;
+        height: 2px;
+        background: $mainColor;
+        bottom: -11px;
+        left: 75px;
+      }
+      &::before{
+        position: absolute;
+        content: "";
+        width: 40%;
+        height: 2px;
+        background: $mainColor;
+        bottom: -18px;
+        left: 90px;
+      }
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      padding-top: 15px;
+
+      li{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .icon{
+          width: 35px;
+          height: 35px;
+          font-size: 22px;
+          border-radius: 50%;
+          color: $mainColor;
+          background: #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .text{
+          padding: 8px;
+          font-size: 16px;
+          font-weight: 600;
+          color: #333;
+          font-family: $fontText;
+        }
+      }
+    }
+    .footer{
+        width: 100%;
+        padding: 10px;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+  }

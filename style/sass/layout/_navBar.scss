@@ -1,0 +1,160 @@
+@import "../helpers/variables";
+@import "../helpers/mixin";
+
+nav {
+  width: 100%;
+  height: 100px;
+  @include opacityColor($blackColor, 0.6);
+  position: fixed;
+  top: 0;
+  z-index: 2000;
+  transition: all 0.4s linear;
+  .container {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .item {
+    span {
+
+      color: azure;
+      font-size: 45px;
+      cursor: pointer;
+    }
+  }
+  .logo {
+    width: 130px;
+    display: block;
+    a {
+      display: block;
+      font-size: 24px;
+      text-decoration: none;
+      height: 100%;
+      color: $mainColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $fontText;
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    li {
+      a {
+        padding: 15px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 20px;
+        color: $whiteColor;
+        text-transform: capitalize;
+        transition: all 0.5s linear;
+        font-family: $fontText;
+        font-weight: 400;
+        &.active {
+          color: $mainColor;
+        }
+        &:hover {
+          color: $mainColor;
+          transition: 0.4s linear;
+        }
+      }
+    }
+  }
+  .number {
+    color: $whiteColor;
+    font-size: 21px;
+    text-align: center;
+    padding: 10px 17px;
+    border: 1px solid $whiteColor;
+    font-family: $fontText;
+    text-transform: capitalize;
+    // font-weight: bold;
+  }
+}
+
+nav.active {
+  position: fixed;
+  background-color: $blackColor;
+  height: 80px;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 230px;
+  height: 100%;
+  z-index: 3000;
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(300px);
+  transition: all 0.5s linear;
+  .close {
+    padding: 15px 20px;
+    width: 100%;
+    text-align: right;
+    span {
+      color: azure;
+      font-size: 45px;
+      cursor: pointer;
+    }
+  }
+  .brand {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: $mainColor;
+      font-size: 32px;
+    }
+  }
+  .item {
+    width: 100%;
+    height: 80%;
+
+    ul {
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      margin-top: 10px;
+      padding: 0;
+      li {
+        text-align: center;
+        a {
+          text-decoration: none;
+          padding: 22px 30px;
+          display: block;
+          font-size: 20px;
+          font-family: $fontText;
+          text-transform: capitalize;
+          color: $whiteColor;
+          transition: all 0.5s linear;
+          &.active {
+            color: $mainColor;
+          }
+          &:hover {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+aside.active {
+  transform: translateX(0);
+}
